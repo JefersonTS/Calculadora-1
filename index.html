@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora 1</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <script type="text/javascript" src="funcoes.js"></script>
+</head>
+
+
+<body>
+    <div id="tudo">
+        <div id="psub">
+            <h1>Exercicio 1 - Subtração</h1>
+            <p>Número 1: <input type="number" id="numer1"/></p>
+            <p>Número 2: <input type="number" id="numer2"/></p>
+            <p><button onclick="subtracao()"> Calcular </button></p>
+            <p>Resultado<h3 id="calcu"> </h3></p>
+        </div>
+        <div id="pmult">
+            <h1>Exercicio 2 - Multiplicação</h1>
+            <h2>Para multiplicar apenas DOIS números, digite 1 no terceiro campo</h2>
+            <p>Número 1: <input type="number" id="nume1"/></p>
+            <p>Número 2: <input type="number" id="nume2"/></p>
+            <p>Número 3: <input type="number" id="nume3"/></p>
+            <p><button onclick="multiplicacao()"> Calcular </button></p>
+            <p>Resultado<h3 id="calcul"> </h3></p>
+        </div>
+        <div id="pdiv">
+            <h1>Exercicio 3 - Divisão</h1>
+            <p> Número 1: <input type="number" id="num1"/> </p>
+            <p> Número 2: <input type="number" id="num2"/> </p>
+            <p> <button onclick="divisao()"> Calcular</button></p>
+            <p> Resultado <h3 id="calculos"> </h3></p>
+        </div>
+        <div id="pmedpon">
+            <h1>Exercicio 4 - Média Ponderada</h1>
+            <p> Nota 1: <input type="number" id="n1"></p>
+            <p> Nota 2: <input type="number" id="n2"></p>
+            <p> <button onclick="mediap()"> Calcular </button></p>
+            <p> Resultado <h3 id="calculo"></h3> </p>
+        </div>
+
+        <div id="pdesc">
+            <h1>Exercicio 5 - Desconto de 10%</h1>
+            <p> Digite o valor: <input type="number" id="nu1"></p>
+            <p> <button onclick="desconto()"> Calcular </button> </p>
+            <p> Resultado <h3 id="desc"> </h3> </p>
+        </div>
+
+        <div id="psal">
+            <h1>Exercício 6 - Salário</h1>
+            <p> Digite o salário: <input type="number" id="n11"></p>
+            <p> Digite o valor das vendas: <input type="number" id="n22"></p>
+            <p> <button onclick="calc1()"> Calcular </button> </p>
+            <p> Resultado <h3 id="sal"></h3> </p>
+        </div>
+
+        <div id="pnovpes">
+            <h1>Exercicio 7 - Novo Peso</h1>
+            <p> Digite o seu peso atual: <input type="number" id="numero1"/></p>
+            <p> <button onclick="calc2()"> Calcular </button></p>
+            <p> Resultado <h3 id="pesoma"> </h3></p>
+            <p> <h3 id="pesome"> </h3></p>
+        </div>
+
+        <div id="pconv">
+            <h1>Exercício 8 - Kg/g</h1>
+            <p> Digite o Peso em KG: <input type="number" id="n_1"></p>
+            <p> <button onclick="conv()"> Calcular </button> </p>
+            <p> Resultado <h3 id="resu"> </h3> </p>
+        </div>
+
+        <div id="partrap">
+            <h1>Exercício 9 - Área do Trapézio</h1>
+            <p> Digite o valor da base maior de seu trapézio: <input type="number" id="bmaior"/> </p>
+            <p> Digite o valor da base menor de seu trapézio: <input type="number" id="bmenor"/> </p>
+            <p> Digite a altura de seu trapézio: <input type="number" id="alt"/> </p>
+            <p> <button onclick="areat()"> Calcular </button> </p>
+            <p> Resultado <h3 id="trap"> </h3> </p>
+        </div>
+
+        <div id="parquad">
+            <h1>Exercício 10 - Área do Quadrado</h1>
+            <p> Digite o valor do lado de seu quadrado: <input type="number" id="lado"/> </p>
+            <p> <button onclick="areaq()"> Calcular </button> </p>
+            <p> Resultado <h3 id="quad"> </h3> </p>
+        </div>
+
+        <div id="parlog">
+            <h1>Exercício 11 - Área do Losango</h1>
+            <p> Digite o valor da Diagonal Maior de seu Losango: <input type="number" id="dmaior"/> </p>
+            <p> Digite o valor da Diagonal Menor de seu Losango: <input type="number" id="dmenor"/> </p>
+            <p> <button onclick="areal()"> Calcular </button> </p>
+            <p> Resultado <h3 id="los"> </h3> </p>
+        </div>
+
+        <div id="psalmin">
+            <h1>Exercício 12 - Salário Mínimo</h1>
+            <p> Informe o seu salário: <input type="number" id="sfuncionario"/> </p>
+            <p> Informe o salário minimo atual: <input type="number" id="sminimo"/> </p>
+            <p> <button onclick="sal()"> Calcular </button></p>
+            <p> Resultado <h3 id="s"> </h3> </p>
+        </div>
+
+        <div id="ptab">
+            <h1>Exercício 13 - Tabuada</h1>
+            <p> Informe a tabuada desejada: <input type="number" id="n_11"></p>
+            <p> <button onclick="tab()"> Calcular </button></p>
+            <p> Resultado <h3 id="buada"> </h3> </p>
+        </div>
+
+        <div id="pidade">
+            <h1>Exercício 14 - Idade, Meses, Semanas,Dias</h1>
+            <p> Informe o ano atual: <input type="number" id="ano"/> </p>
+            <p> Informe o ano de seu nascimento: <input type="number" id="nasc"/> </p>
+            <p> <button onclick="ida()"> Calcular </button></p>
+            <p> Resultado <h3 id="idad"> </h3> </p>
+            <p> <h3 id="mese"> </h3> </p>
+            <p> <h3 id="semana"> </h3> </p>
+            <p> <h3 id="dia"> </h3> </p>
+        </div>
+
+        <div id="ptemp">
+            <h1>Exercício 18 - Temperatura Cº/Fº</h1>
+            <p> Digite sua temperatura em Graus Celsius <input type="number" id="g"/> </p>
+            <p> <button onclick="temp()"> Calcular </button></p>
+            <p> Resultado <h3 id="tempe"> </h3> </p>
+        </div>
+
+    </div>
+</body>
+</html>
